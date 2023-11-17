@@ -1,0 +1,16 @@
+directory,
+file {
+    display: block;
+    margin: 1em;
+    border: thin solid black;
+    box-shadow: 0.5em 0.5em 0.5em black;
+}
+
+directory::before {
+    display: block;
+    content: attr(name);
+}
+
+file::after {
+    content: attr(name);
+}
