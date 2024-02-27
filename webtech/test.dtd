@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT note (to, from)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>

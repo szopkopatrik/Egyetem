@@ -1,0 +1,92 @@
+.chessboard {
+    margin: 1em auto;
+    border-collapse: collapse;
+}
+
+.chessboard > tbody > tr:nth-child(odd) > td:nth-child(odd) {
+    background-color: white;
+}
+
+.chessboard > tbody > tr:nth-child(odd) > td:nth-child(even) {
+    background-color:  lightgray;
+}
+
+.chessboard > tbody > tr:nth-child(even) > td:nth-child(odd) {
+    background-color:  lightgray;
+}
+
+.chessboard > tbody > tr:nth-child(even) > td:nth-child(even) {
+    background-color:  white;
+}
+
+.chessboard td,
+.chessboard th {
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.chessboard > tbody > tr:first-child > td {
+    border-top: medium solid black;
+}
+
+.chessboard > tbody > tr:last-child > td {
+    border-bottom:medium solid black;
+}
+
+.chessboard > tbody > tr > td:last-of-type {
+    border-right:medium solid black;
+}
+
+.chessboard > tbody > tr > td:first-of-type {
+    border-left:medium solid black;
+}
+
+.chessboard td.whiteKing::before {
+    content: "\2654";
+}
+
+.chessboard td.whiteQueen::before {
+    content: "\2655";
+}
+
+.chessboard td.whiteRook::before {
+    content: "\2656";
+}
+
+.chessboard td.whiteBishop::before {
+    content: "\2657";
+}
+
+.chessboard td.whiteKngiht::before {
+    content: "\2658";
+}
+
+.chessboard td.whitePawn::before {
+    content: "\2659";
+}
+
+.chessboard td.blackKing::before {
+    content: "\265a";
+}
+
+.chessboard td.blackQueen::before {
+    content: "\265b";
+}
+
+.chessboard td.blackRook::before {
+    content: "\265c";
+}
+
+.chessboard td.blackBishop::before {
+    content: "\265d";
+}
+
+.chessboard td.blackKngiht::before {
+    content: "\265e";
+}
+
+.chessboard td.blackPawn::before {
+    content: "\265f";
+}

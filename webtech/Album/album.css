@@ -1,0 +1,68 @@
+album {
+    display: block;
+    width: fit-content;
+    border: solid black;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 1em;
+    box-shadow: 0.5em 0.5em 0.5em black;
+}
+
+artist,
+album > title,
+year{
+    display: inline-block;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+}
+
+tracks {
+    display: table;
+    width: 100%;
+    counter-reset: track-number;
+}
+
+track {
+    display: table-row;
+
+}
+
+track > title,
+length {
+        display: table-cell;
+        padding: 0.5em;
+}
+
+year::before {
+    content: '(';
+}
+
+year::after {
+    content: ')';
+}
+
+track:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+track:nth-child(odd) {
+    background-color: white;
+}
+
+track:hover {
+    background-color: gold;
+    font-weight: bold;
+}
+
+track > title::before {
+    content: counter(track-number) '.';
+    counter-increment: track-number;
+    display: inline-block;
+    width: 2em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+length {
+    text-align: right;
+}

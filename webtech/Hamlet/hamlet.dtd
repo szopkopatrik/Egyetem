@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT play (author,title,br,act)>
+<!ELEMENT br (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT act (title,descreotion,speech)>
+<!ELEMENT descreotion (#PCDATA)>
+<!ELEMENT speech (speaker,line,stagedir)>
+<!ELEMENT stagedir (#PCDATA)>
+<!ELEMENT speaker (#PCDATA)>
+<!ELEMENT line (break)>
+<!ELEMENT break (#PCDATA)>
