@@ -19,7 +19,6 @@ def kibovitettEuklidesz(a, b):
     d,x,y = a,x,y
     return d, x, y
 
-#Teszt
 a = 329
 b = 15
 d, x, y = kibovitettEuklidesz(a, b)
